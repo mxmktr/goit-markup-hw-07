@@ -1,7 +1,5 @@
 @import "./utils/normalizer";
 @import "./utils/variables";
-
-body {
-  margin: 0;
-  color: $text-color;
-}
+@import "./mixins/mixins";
+@import "./utils/common";
+@import "./components/header";

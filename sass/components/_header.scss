@@ -1,0 +1,31 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation-header,
+.nav-list,
+.contact-list {
+  @include horizontalCenteredFlex();
+}
+
+.logo {
+  margin-right: 93px;
+
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: $logo-color;
+
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &__span {
+    display: inline-block;
+    color: $black-color;
+
+    &--bottom {
+      color: $white-color;
+    }
+  }
+}
