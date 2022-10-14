@@ -485,4 +485,36 @@ html {
 .skills__description {
   line-height: 171%;
   letter-spacing: 0.03em;
+}
+
+.job-list {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.job-list__item {
+  position: relative;
+  max-width: 370px;
+}
+.job-list__img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.job-list__title {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 27px 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=main.css.map */
