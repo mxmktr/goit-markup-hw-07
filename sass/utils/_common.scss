@@ -26,6 +26,40 @@ html {
   font-size: 14px;
 }
 
+.section {
+  padding: 94px 0px;
+}
+
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
   @include horizontalCenteredFlex();
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+
+  color: $head-color;
 }
