@@ -101,12 +101,12 @@
               <use href="./images/icons.svg#icon-close-black-18dp"></use>
             </svg>
           </button>
-          <h2 class="title modal-title">
+          <h2 class="title modal__title">
             Залиште свої дані, ми вам передзвонимо
           </h2>
-          <form class="modal-form">
+          <form class="form modal__form">
             <label for="user-name">Ім'я</label>
-            <div class="modal-input-wrap">
+            <div class="form__wrap">
               <input
                 type="text"
                 id="user-name"
@@ -114,13 +114,13 @@
                 class="user-name base-input"
                 required
               />
-              <svg class="modal-input-icon">
+              <svg class="base-input__icon">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
 
             <label for="user-tel">Телефон</label>
-            <div class="modal-input-wrap">
+            <div class="form__wrap">
               <input
                 type="tel"
                 id="user-tel"
@@ -128,13 +128,13 @@
                 class="user-tel base-input"
                 required
               />
-              <svg class="modal-input-icon">
+              <svg class="base-input__icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
 
             <label for="user-email">Пошта</label>
-            <div class="modal-input-wrap">
+            <div class="form__wrap">
               <input
                 type="email"
                 id="user-email"
@@ -142,7 +142,7 @@
                 class="user-email base-input"
                 required
               />
-              <svg class="modal-input-icon">
+              <svg class="base-input__icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
@@ -151,27 +151,27 @@
             <textarea
               name="comment"
               id="comment"
-              class="comment"
+              class="textarea"
               placeholder="Введіть текст"
             ></textarea>
 
-            <div class="checkbox-wrap">
+            <div class="checkbox">
               <input
                 type="checkbox"
                 id="checkbox"
                 name="checkbox"
-                class="checkbox visually-hidden"
+                class="checkbox_input visually-hidden"
                 required
               />
 
-              <label for="checkbox" class="checkbox-label">
-                <span class="checkbox-icon-wrap">
-                  <svg>
+              <label for="checkbox" class="checkbox__label">
+                <span class="checkbox__inner-wrap">
+                  <svg class="checkbox__icon">
                     <use href="./images/icons.svg#icon-Vector-final"></use>
                   </svg>
                 </span>
                 Погоджуюся з розсилкою та приймаю<span>&nbsp;</span>
-                <a href="#" class="checkbox-link"> Умови договору</a></label
+                <a href="#" class="checkbox__link"> Умови договору</a></label
               >
             </div>
 
@@ -490,7 +490,7 @@
     </main>
     <!-- address + contact information -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="address-box">
           <a href="#top-logo" title="Логотип компанії" lang="en" class="logo"
             >Web<span class="logo__span logo__span--bottom">Studio</span></a

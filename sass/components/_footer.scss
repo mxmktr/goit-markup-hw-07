@@ -1,3 +1,17 @@
+.footer {
+  background: $full-page-color;
+  padding: 60px 0;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.address-box {
+  margin-right: 70px;
+}
+
 .address {
   color: $white-color;
 
@@ -29,4 +43,15 @@
       color: #2196f3;
     }
   }
+}
+
+.strong {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
