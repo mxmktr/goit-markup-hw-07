@@ -96,8 +96,12 @@
       <!-- create backdrop + modal is-hidden-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="close-btn-x" data-modal-close>
-            <svg class="close-btn-icon">
+          <button
+            type="button"
+            class="close-btn modal_close-btn"
+            data-modal-close
+          >
+            <svg class="close-btn__icon">
               <use href="./images/icons.svg#icon-close-black-18dp"></use>
             </svg>
           </button>
@@ -175,7 +179,7 @@
               >
             </div>
 
-            <button type="submit" class="modal-form-btn">Відправити</button>
+            <button type="submit" class="button modal__btn">Відправити</button>
           </form>
         </div>
       </div>
@@ -186,7 +190,7 @@
           <h2 class="visually-hidden">Опис основних софт-скілів компанії</h2>
           <ul class="skills">
             <li class="skills__item">
-              <div class="skills__wrap">
+              <div class="skills__inner-wrap">
                 <svg class="skills__icon">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -198,7 +202,7 @@
               </p>
             </li>
             <li class="skills__item">
-              <div class="skills__wrap">
+              <div class="skills__inner-wrap">
                 <svg class="skills__icon">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -210,7 +214,7 @@
               </p>
             </li>
             <li class="skills__item">
-              <div class="skills__wrap">
+              <div class="skills__inner-wrap">
                 <svg class="skills__icon">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -221,7 +225,7 @@
               </p>
             </li>
             <li class="skills__item">
-              <div class="skills__wrap">
+              <div class="skills__inner-wrap">
                 <svg class="skills__icon">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -550,18 +554,20 @@
           </ul>
         </div>
         <form class="form email-form">
-          <label for="email" class="label-email">Підпишіться на розсилку</label>
-          <div class="email-wrap">
+          <label for="email" class="email-form__label"
+            >Підпишіться на розсилку</label
+          >
+          <div class="email-form__inner-wrap">
             <input
               type="email"
               id="email"
               name="email"
-              class="input-email"
+              class="email-form__input"
               placeholder="E-mail"
             />
-            <button type="submit" class="btn-email">
+            <button type="submit" class="email-btn">
               Підписатися
-              <svg class="btn-email-icon">
+              <svg class="email-btn__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

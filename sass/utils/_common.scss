@@ -63,3 +63,11 @@ html {
 
   color: $head-color;
 }
+
+input,
+button,
+textarea {
+  padding: 0;
+  border: none;
+  outline: none;
+}
