@@ -79,7 +79,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--btn-active-color);
+    background-color: $btn-active-color;
   }
 }
 
@@ -95,7 +95,7 @@
   border-radius: 50%;
 
   cursor: pointer;
-  background-color: var(--white-color);
+  background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,7 +124,7 @@
 
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--logo-color);
+  background-color: $logo-color;
 
   cursor: pointer;
 
@@ -134,7 +134,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--btn-active-color);
+    background-color: $btn-active-color;
   }
 
   &__icon {

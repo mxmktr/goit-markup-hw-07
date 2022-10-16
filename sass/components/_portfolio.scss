@@ -43,8 +43,8 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
 
-    color: var(--white-color);
-    background-color: var(--wrapper-example-background-color);
+    color: $white-color;
+    background-color: $wrapper-example-background-color;
 
     transition-duration: 250ms;
 
@@ -58,7 +58,7 @@
   }
 
   &__name {
-    color: var(--head-color);
+    color: $head-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 200%;

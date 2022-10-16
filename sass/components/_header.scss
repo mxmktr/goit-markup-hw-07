@@ -77,7 +77,7 @@
     height: 4px;
     border-radius: 2px;
 
-    background-color: var(--logo-color);
+    background-color: $logo-color;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
