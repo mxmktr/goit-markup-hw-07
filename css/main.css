@@ -612,7 +612,7 @@ textarea {
           align-items: center;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
   border-radius: 50%;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -627,7 +627,15 @@ textarea {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-list__icon:hover {
+.social-list__link:hover .social-list__icon {
+  fill: #ffffff;
+}
+
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__social-icon {
   fill: #ffffff;
 }
 
@@ -877,6 +885,7 @@ textarea {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples-list__item:hover, .examples-list__item:focus {
+  cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1010,13 +1019,13 @@ textarea {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-wrap:hover .base-input__icon {
+.form__wrap:hover .base-input__icon {
   fill: #2196f3;
 }
 .base-input:focus + .base-input__icon, .base-input:valid + .base-input__icon {
   fill: #2196f3;
 }
-.form-wrap:hover .base-input {
+.form__wrap:hover .base-input {
   border-color: #2196f3;
   cursor: pointer;
 }
@@ -1110,7 +1119,7 @@ textarea {
   border-radius: 2px;
   border: 2px solid #212121;
 }
-.checkbox:checked + .checkbox-label .checkbox__inner-wrap {
+.checkbox__input:checked + .checkbox__label .checkbox__inner-wrap {
   background-color: #2196f3;
   border: none;
 }
